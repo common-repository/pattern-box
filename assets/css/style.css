@@ -1,0 +1,49 @@
+/* Service Split Layout */
+.service-item:hover .service-item-img{
+  transform: translateY(-20px);
+  }
+  
+.service-item-img{
+  transition: transform 0.3s ease;
+}
+
+/* Team Social Centered */
+
+.team-member-social-icons{
+  opacity:0;
+  transition: padding-bottom 0.5s ease;
+  }
+  
+  .team-members-block .team-member-item:hover .team-member-social-icons{
+  opacity:1;
+  padding-bottom:20px;
+  }
+  
+  .team-member-image{
+  position:relative;
+  }
+  
+  .team-member-image::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index:1;
+  opacity:0;
+  transition: opacity 0.3s ease;
+  }
+  
+  .team-member-image:hover::before{
+  opacity:1;
+  }
+  
+  .team-member-title{
+  transition: color 0.3s ease;
+  }
+  
+  .team-members-block .team-member-item:hover .team-member-title{
+  color:#8ed1fc;
+  }

@@ -1,0 +1,10 @@
+{
+    "name": "dwp/pattern-box",
+    "description": "A WordPress plugin to add patterns under a category.",
+    "type": "wordpress-plugin",
+    "autoload": {
+      "psr-4": {
+        "PatternBox\\": "src/"
+      }
+    }
+}
